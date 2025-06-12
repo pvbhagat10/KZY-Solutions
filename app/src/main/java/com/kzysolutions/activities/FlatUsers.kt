@@ -208,7 +208,7 @@ fun sendNotificationToToken(context: Context, token: String, title: String, body
     ) {
         override fun getHeaders(): MutableMap<String, String> {
             val headers = HashMap<String, String>()
-            headers["Authorization"] = "Bearer ${YourAuthTokenProvider.getAccessToken(context)}"
+            headers["Authorization"] = "Bearer ya29.c.c0ASRK0GYesS4TrRnHrRq-4pjRS03cHW7hNwxR0riOeLM__JLbQl8Sok8pEoCMi8qoWjM2XhozufhFrdRBj1fAzFNE3NRQK0KGG0hXt5GjT6bS4joMlBu00cIxzJy6k4R5-pGKEem4l1WrMOliW8O8weCXbUfHyYiYcYV5jY0OWRwnA5rYU4P-joszLzH_lp0uPzHtKy88g3JuUl9JQh6a0Di6hikjSYdDSK3LDC0E_xu2nHfMY-5wgEY7BKP-n-z8aiaQjj86vGEOGcf_HUGM2R46ET2q-i2q-DrfqsBkLFJ_qiI_wxM7iawZNylqWEWAJ153aHH2cFYArXe6HgP9yHo4-5gI5QSvbgVTCaW7cK47JKoYCFL_KGNyH385Dim88mXZodc4qohc9az15-5MWcqqg4_d9UF-8oJoYjROUtV18w9FgMUqikrU3afdtpj8yl8qwx0MMOmIFw3rhxvwY6iZy47MsRzn474jzR8_MXqrV5WrfMjiiWvYakOm3Z1Xumona0g-hcSWIRztJdF88m-u2-l5uSj57IzkpIYSRzdBsqwb1221iY6ujrxJIbFJQdR0IU2t9OkxatBcZhnq9yW2hF1BUi5M8cg8yqWy6-kel1qWn1rt_kwJBFeMsueyq8JV2Ulkih-O2oMBod8vYw_tkalMYX41jlpeg42Rc5tyzWbsJxbt0zaa37u2njRF9Yy_OrSRywMui65Odht5WZ_zly4pq-QXaVaay-zmdJxhJtFQioyX1XJ32mf25BVWhxZcBcik74QO9ogyl2lSFkbccjSXQ-zJdbzjyrnw6Mir8QVidqMneoBVcghF_Jd-Yqd0J00OV0caB_dmOQZyMe_yB55_xS33_tu6fmY7-ph1RZMUSMgx1Md7VX8VdMBl0ogn9fe_-m45kBQbeW5bb3_3o0s7R7OgW77Jl3BXIYVsBx1haM_s71vZIvBJkVzSYueh889SR8caBS94M2qM6S41UFl6-83nstg4Sp856y74fnd0h041Rhq"
             headers["Content-Type"] = "application/json"
             return headers
         }
