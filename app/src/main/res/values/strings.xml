@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">KZY Solutions</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="phone">phone</string>
+    <string name="regular">Regular</string>
+    <string name="enter_link">Enter Link</string>
+    <string name="or">OR</string>
+    <string name="email_Id">Email-Id</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="log_in">LOG IN</string>
+    <string name="submit">Submit</string>
+    <string name="user_id">User ID</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="upload_link">Upload Link</string>
+    <string name="title_activity_phone_login">PhoneLogin</string>
+    <string name="title_activity_select_role">SelectRoleActivity</string>
+    <string name="title_activity_admin_account_form">AdminAccountFormActivity</string>
+    <string name="title_activity_flat_user_details">FlatUserDetailsActivity</string>
+
+    <array name="roles_array">
+        <item>Admin</item>
+        <item>Flat User</item>
+    </array>
+    <string name="title_activity_receipts">ReceiptsActivity</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="title_activity_my_buildings">MyBuildings</string>
+    <string name="title_activity_flat_users">FlatUsers</string>
+    <string name="title_activity_add_new_flat_details">AddNewFlatDetailsActivity</string>
+    <string name="title_activity_flat_details">FlatDetailsActivity</string>
+    <string name="title_activity_my_flats">MyFlatsActivity</string>
+    <string name="title_activity_payments">PaymentsActivity</string>
+    <string name="title_activity_all_flat_users">AllFlatUsersActivity</string>
+    <string name="title_activity_remove_ads">RemoveAdsActivity</string>
+    <string name="title_activity_flat_approval">FlatApprovalActivity</string>
+    <string name="title_activity_pay_platform_fee">PayPlatformFeeActivity</string>
+</resources>
+

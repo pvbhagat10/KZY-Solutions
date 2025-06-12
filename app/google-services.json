@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1044845107942",
+    "project_id": "kzy-building-mgmt",
+    "storage_bucket": "kzy-building-mgmt.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044845107942:android:444532043f35ee091f3927",
+        "android_client_info": {
+          "package_name": "com.kzysolutions"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBceq-HjlNsI547pfYdcB3UvIXPwIHoOBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
