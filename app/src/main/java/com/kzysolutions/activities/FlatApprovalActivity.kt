@@ -82,7 +82,6 @@ fun FlatApprovalScreen(buildingId: String) {
                                     wingNumber = flatRequest.wingNumber
                                 )
 
-                                // Add and sort by timestamp
                                 newList.add(approvalData)
                                 approvalList =
                                     newList.sortedByDescending { it.flatNumber + it.wingNumber }
