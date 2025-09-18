@@ -134,7 +134,7 @@ fun TopBar(heading: String, content: @Composable (PaddingValues) -> Unit) {
                         )
                     }
                 },
-                colors = TopAppBarDefaults.topAppBarColors( // Changed here
+                colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = Transparent,
                     titleContentColor = White
                 )
