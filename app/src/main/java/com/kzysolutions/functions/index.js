@@ -2,13 +2,12 @@ const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 
 admin.initializeApp({
-  credential: admin.credential.applicationDefault() // ADC via service account JSON
+  credential: admin.credential.applicationDefault()
 });
 
 exports.notifyPendingPayments = functions.https.onCall(async (data, context) => {
   if (!context.auth) throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
   const uid = context.auth.uid;
-  // TODO: Verify this user is building-admin
 
   const flatsSnap = await admin.database().ref('Flats').orderByChild('netDue').startAt(1).once('value');
   const tokens = [];
