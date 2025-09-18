@@ -13,7 +13,7 @@ object PlatformFee {
             val status = it.getValue(String::class.java) ?: "unpaid"
             callback(status)
         }.addOnFailureListener {
-            callback("unpaid") // default to unpaid if error
+            callback("unpaid")
         }
     }
 }
