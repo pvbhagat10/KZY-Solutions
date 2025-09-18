@@ -107,7 +107,7 @@ fun CreateNewUserForm() {
                     "role" to selectedRole,
                     "buildingIds" to listOf<String>(),
                     "flatIds" to listOf<String>(),
-                    "platformFeeStatus" to "unpaid", // Optional: "paid", "ads"
+                    "platformFeeStatus" to "unpaid",
                     "createdAt" to ServerValue.TIMESTAMP
                 )
 
