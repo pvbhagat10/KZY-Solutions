@@ -113,7 +113,6 @@ class AddNewFlatDetailsActivity : ComponentActivity() {
                                 flatRef.addListenerForSingleValueEvent(object : ValueEventListener {
                                     override fun onDataChange(snapshot: DataSnapshot) {
                                         if (snapshot.exists()) {
-                                            // Flat exists — just request to join
                                             val joinRef = dbRef.child("FlatJoinRequests").child(buildingId).child(flatId)
                                             val joinRequest = mapOf(
                                                 "requestedBy" to uid,
@@ -129,7 +128,6 @@ class AddNewFlatDetailsActivity : ComponentActivity() {
                                                 Toast.makeText(context, "Failed to send join request", Toast.LENGTH_SHORT).show()
                                             }
                                         } else {
-                                            // Flat doesn't exist — create and send request
                                             val flatDetails = mapOf(
                                                 "buildingId" to buildingId,
                                                 "flatNumber" to flatNumber,
