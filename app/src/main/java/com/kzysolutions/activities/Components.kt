@@ -144,10 +144,10 @@ fun TopBar(heading: String, content: @Composable (PaddingValues) -> Unit) {
             Column(
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(innerPadding) // ✅ Properly apply scaffold padding
-                    .padding(horizontal = 12.dp) // ✅ Additional horizontal padding if needed
+                    .padding(innerPadding)
+                    .padding(horizontal = 12.dp)
             ) {
-                content(innerPadding) // Or just content(PaddingValues(0.dp)) if you don't need to pass it further
+                content(innerPadding)
             }
         }
     )
@@ -285,13 +285,12 @@ fun TopBarForLazyColumnsLogOut(
     )
 }
 
-//region Text Fields
 @Composable
 fun TextField(
     label: String,
     textValue: String,
     onValueChange: (String) -> Unit,
-    textType: String = stringResource(id = R.string.regular), // Default to regular text
+    textType: String = stringResource(id = R.string.regular),
     isPasswordTextField: Boolean = false,
     enabled: Boolean = true
 ) {
@@ -594,7 +593,6 @@ fun ItemRow(
         shape = RoundedCornerShape(12.dp)
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
-            // Image
             AsyncImage(
                 model = item.imageUrl,
                 contentDescription = null,
@@ -607,13 +605,11 @@ fun ItemRow(
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            // Title & Subtitle
             Text(text = item.title, fontSize = 20.sp, fontWeight = FontWeight.Bold)
             Text(text = item.subtitle, fontSize = 14.sp, color = Color.Gray)
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            // Buttons in 2x2 grid
             Column {
                 Row(
                     modifier = Modifier.fillMaxWidth(),
@@ -731,13 +727,11 @@ fun ItemRow3(
         shape = RoundedCornerShape(12.dp)
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
-            // Title & Subtitle
             Text(text = item.title, fontSize = 20.sp, fontWeight = FontWeight.Bold)
             Text(text = item.subtitle, fontSize = 14.sp, color = Color.Gray)
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            // Buttons in 2x2 grid
             Column {
                 Row(
                     modifier = Modifier.fillMaxWidth(),
@@ -832,11 +826,11 @@ data class ItemData2(
     val imageUrl: String,
     val title: String,
     val subtitle: String,
-    val id: String, // buildingId
-    val uid: String, // adminUID
+    val id: String, 
+    val uid: String, 
     val flatNumber: String,
     val wingNumber: String,
-    val flatId: String // ✅ Add this line
+    val flatId: String
 )
 
 
@@ -847,7 +841,7 @@ fun ItemsList2(
     onClick: (ItemData) -> Unit
 ) {
     LazyColumn(
-        modifier = modifier.fillMaxSize(), // uses correct padding
+        modifier = modifier.fillMaxSize(),
         contentPadding = PaddingValues(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
@@ -891,7 +885,7 @@ fun BannerAdView(platformFeeStatus: String) {
                 .height(50.dp),
             factory = { context ->
                 AdView(context).apply {
-                    this.adUnitId = "ca-app-pub-3940256099942544/6300978111"
+                    this.adUnitId = "ca-app-pub-39402569942544/63009781"
                     setAdSize(AdSize.BANNER)
                     loadAd(AdRequest.Builder().build())
                 }
@@ -907,7 +901,7 @@ fun BannerAdView() {
             .height(50.dp),
         factory = { context ->
             AdView(context).apply {
-                this.adUnitId = "ca-app-pub-3099495950409182/3568063504"
+                this.adUnitId = "ca-app-pub-30994959509182/35680634"
                 setAdSize(AdSize.BANNER)
                 loadAd(AdRequest.Builder().build())
             }
